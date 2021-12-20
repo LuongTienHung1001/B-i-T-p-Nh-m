@@ -39,6 +39,10 @@ img {
 .img-icon {
     text-align: center;
 }
+.story-icon-main {
+    height: 40px;
+    width: 40px;
+}
 
 .information{
     font-size: 12px;
