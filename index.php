@@ -19,8 +19,8 @@
                     <img class="picture-1" src="./img/photo-1592899677977-9c10ca588bbd.jpg" alt="">
                 </div>
              <div class="form"  >
-                <form class="form-signin p-5 " style=" width:346px; heigh:38px;" action="process-index.php" method="post">
-                    <h1 class="h3 mb-3 font-weight-normal">INTARGRAM</h1>
+                <form class="form-signin p-4 " style=" width:349px; heigh:452px;" action="process-index.php" method="post">
+                    <h1 class="h3 mb-3 font-weight-normal p-5">𝓘𝓷𝓽𝓪𝓻𝓰𝓻𝓪𝓶</h1>
                     <label for="inputEmail" class="sr-only">Email address</label>
                     <input type="email" id="inputEmail" name="txtEmail" class="form-control" placeholder="Email address"
                         required autofocus>
@@ -37,9 +37,12 @@
                          }
 
                          ?>
-                    </div>
+                     </div>
                     <button class="btn btn-lg btn-primary btn-block" style="width: 260px" type="submit" name="btnSignIn">Sign in</button>
-                    <p class="mt-5 mb-3 text-muted">&copy; 2020-2021</p>
+                        <hr class="dropdown-divider">
+                        <label for="inputPassword" class="sr-only">Don't have an account?</label>
+                        <a class="signup-item" href="./signup.php"> Sign up</a>
+                    <p class="mt-5 mb-3 text-muted">&copy; 2021-2022</p>
                 </form>
               </div>
             </div>
