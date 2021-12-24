@@ -11,33 +11,36 @@
 <body>
     
     <main>
-      <div class="container mt-5 " style=" max-width: 40%; ">
-        <div class="form ">
-        <form class="form-signup p-6" style=" width:349px; heigh:452px;" action="process-signup.php" method="post">
+      <div class="container  " style=" max-width: 22.7%; ">
+         <div class="form" style=" ">
+           <form class="form-signup p-4 " style=" width:349px; heigh:452px;" action="process-signup.php" method="post">
             <h1 class="h3 mb-3 font-weight-normal p-5">𝓘𝓷𝓽𝓪𝓻𝓰𝓻𝓪𝓶</h1>
-            <label for="inputUser" class="sr-only">User Name</label>
-            <input type="text" id="txtUser" name="txtUser" class="form-control" placeholder="Username" required autofocus>
-            <label for="inputEmail" class="sr-only">Email address</label>
-            <input type="text" id="txtEmail" name="txtEmail" class="form-control" placeholder="Email address" required autofocus>
-            <label for="inputPassword" class="sr-only" >Password</label>
-            <input type="password" id="inputPassword" name="txtPass" class="form-control" placeholder="Password" required>
-            <label for="inputRetypePassword" class="sr-only" >Password</label>
-            <input type="password" id="inputRytypePassword" name="txtPass2" class="form-control" placeholder="RetypePassword" required>
-            <div class="checkbox mb-3">
-                <label>
+             <label for="inputUser" class="sr-only">User Name</label>
+                <input type="text" id="txtUser" name="txtUser" class="form-control" placeholder="Username" required autofocus>
+             <label for="inputEmail" class="sr-only">Email address</label>
+                <input type="text" id="txtEmail" name="txtEmail" class="form-control" placeholder="Email address" required autofocus>
+             <label for="inputPassword" class="sr-only" >Password</label>
+                <input type="password" id="inputPassword" name="txtPass" class="form-control" placeholder="Password" required>
+             <label for="inputRetypePassword" class="sr-only" >Password</label>
+                <input type="password" id="inputRytypePassword" name="txtPass2" class="form-control" placeholder="RetypePassword" required>
+                <div class="checkbox mb-3">
+                   <label>
                     <input type="checkbox" value="remember-me"> Remember me
-                </label>
-                <?php
-                    if(isset($_GET['error'])){
-                        echo "<h5 style='color:red'> {$_GET['error']} </h5>";
-                    }
+                   </label>
+                  <?php
+                      if(isset($_GET['error'])){
+                          echo "<h5 style='color:red'> {$_GET['error']} </h5>";
+                         }
 
-                ?>
-            </div>
-            <button class="btn btn-lg btn-primary btn-block" type="submit" name="btnSignUp" >Sign Up</button>
-            <p class="mt-5 mb-3 text-muted">&copy; 2021-2022</p>
-        </form>
-        </div> 
+                   ?>
+                </div>
+                 <button class="btn btn-lg btn-primary btn-block" type="submit" name="btnSignUp" >Sign Up</button>
+                   <hr class="dropdown-divider">
+                        <label for="inputPassword" class="sr-only">Have an account?</label>
+                        <a class="signup-item" href="./index.php"> Log in </a>
+                        <p class="mt-5 mb-3 text-muted">&copy; 2021-2022</p>
+              </form>
+             </div> 
       </div>    
     </main>
 

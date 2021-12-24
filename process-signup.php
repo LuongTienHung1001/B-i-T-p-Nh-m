@@ -11,12 +11,12 @@
     $pass02 = $_POST['txtPass2'];
 
         // Bước 01: Kết nối Database Server
-        $conn = mysqli_connect('localhost','root','','qltt');
+        $conn = mysqli_connect('localhost','root','','baitapnhom');
         if(!$conn){
             die("Kết nối thất bại. Vui lòng kiểm tra lại các thông tin máy chủ");
         }
         // Bước 02: Thực hiện truy vấn
-        $sql01 = "SELECT * FROM db_nguoidung WHERE email = '$email' OR tendangnhap='$user'";
+        $sql01 = "SELECT * FROM db_nguoidung WHERE email = '$email' OR TenDangNhap='$user'";
 
         // Ở đây còn có các vấn đề về tính hợp lệ dữ liệu nhập vào FORM
         // Nghiêm trọng: lỗi SQL Injection
@@ -27,7 +27,7 @@
             $error = "User name or email is existed";
             header("location: login.php?error=$error"); 
         }else{
-            $sql02 = "INSERT INTO db_nguoidung(tendangnhap, email, matkhau) VALUES ('$user', '$email', '$pass01')";
+            $sql02 = "INSERT INTO db_nguoidung(TenDangNhap, email, matkhau) VALUES ('$user', '$email', '$pass01')";
             $result02 = mysqli_query($conn, $sql02);
 
             if($result02 == true) {
