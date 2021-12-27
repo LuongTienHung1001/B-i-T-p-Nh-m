@@ -25,16 +25,16 @@
     
         if(mysqli_num_rows($result01) > 0){
             $error = "User name or email is existed";
-            header("location: login.php?error=$error"); 
+            header("location:signup.php?error=$error"); 
         }else{
             $sql02 = "INSERT INTO db_nguoidung(TenDangNhap, email, matkhau) VALUES ('$user', '$email', '$pass01')";
             $result02 = mysqli_query($conn, $sql02);
 
             if($result02 == true) {
-                header("location: signin.php");
+                header("location: index.php");
             } else {
                 $error = "Can not record!";
-                header("location: login.php?error=$error");
+                header("location: signup.php?error=$error");
             }
         }
 
