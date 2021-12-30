@@ -1,11 +1,22 @@
 
 
+body{
+    background-color: #FAFAFA !important;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/* START NAVBAR */
+.my_container_fluid{
+    display: flex;
+    justify-content: space-around;
+}
+.my_nav_item{
+    margin: 0px 14px;
+}
+/* END NAVBAR */
 *:focus{
     outline: none;
 }
@@ -90,11 +101,7 @@ body{
 }
 
 .wrapper{
-    width: 70%;
     max-width: 1000px;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-gap: 30px;
 }
 
 .left-col{
@@ -162,7 +169,6 @@ body{
     background: #fff;
     border: 1px solid #dfdfdf;
     margin-top: 20px;
-    margin-left: 260px;
 }
 
 .info{
