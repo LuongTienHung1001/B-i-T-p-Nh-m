@@ -17,7 +17,7 @@
             style="border-radius:50% ;">
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="/profile.html">Profile</a></li>
+            <li><a class="dropdown-item" href="/profile/profile.php">Profile</a></li>
             <li><a class="dropdown-item" href="#">Saved</a></li>
             <li><a class="dropdown-item" href="#">Settings</a></li>
             <li><a class="dropdown-item" href="#">Switch Accounts</a></li>

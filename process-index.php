@@ -22,9 +22,9 @@
         $result = mysqli_query($conn,$sql);
         if(mysqli_num_rows($result) > 0){
             // CẤP THẺ LÀM VIỆC
-            echo "Home";
-           // $_SESSION['isLoginOK'] = $email;
-           // header("location: index.php"); //Chuyển hướng về Trang quản trị
+        
+            $_SESSION['isLoginOK'] = $email;
+           header("location: homepage.php"); //Chuyển hướng về Trang quản trị
         }else{
             $error = "Bạn nhập thông tin Email hoặc mật khẩu chưa chính xác";
             header("location: index.php?error=$error"); //Chuyển hướng, hiển thị thông báo lỗi
