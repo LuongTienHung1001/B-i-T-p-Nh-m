@@ -13,16 +13,11 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css"
         integrity="sha512-1fPmaHba3v4A7PaUsComSM4TBsrrRGs+/fv0vrzafQ+Rw+siILTiJa0NtFfvGeyY5E182SDTaF5PqP+XOHgJag=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css"/>
+        link
+    <link rel="stylesheet" href="./css/style.css"/>
     
-        <!-- <style>
-           section img {
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                object-fit: cover;
-            }
-        </style> -->
+    
+    
 </head>
 
 <body>
@@ -38,25 +33,48 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-right: 250px;">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item my_nav_item">
-                    <img src="img/home.PNG" alt="" width="auto" height="22">
+                    
+                    <a id="btn_hienthi_home" class="nav-link " href="#" style="text-align: center;">
+                        <img src="img/home.PNG" alt="" width="auto" height="22">
+                    </a>
                   </li>
-                  <li class="nav-item my_nav_item">
-                    <img src="img/messenger.PNG" alt="" width="auto" height="22">
+                  <li class="nav-item my_nav_item" class="show_btn_mess " style="position: relative;" >
+                    
+                    <a id="btn_hienthi_messenger" class="nav-link " href="#" >
+                        <img src="img/messenger.PNG" alt="" width="auto" height="22">
+                    </a>
+                         <div id="show_message" class="show_mess">   
+            
+                         </div>
+                  </li>
+
+                  <li class="nav-item my_nav_item">                    
+                    <a id="btn_hienthi_bangtin" class="nav-link " href="#" style="text-align: center;">
+                        <img src="img/add.PNG" alt="" width="auto" height="22">
+                    </a>
                   </li>
 
                   <li class="nav-item my_nav_item">
-                    <img src="img/add.PNG" alt="" width="auto" height="22">
-                  </li>
-                  <li class="nav-item my_nav_item">
-                    <img src="img/explore.PNG" alt="" width="auto" height="22">
-                  </li>
-                  <li class="nav-item my_nav_item">
-                    <img src="img/like.PNG" alt="" width="auto" height="22">
+                    <a id="btn_hienthi_laban" class="nav-link " href="#" style="text-align: center;">
+                        <img src="img/explore.PNG" alt="" width="auto" height="22">
+                    </a> 
                   </li>
 
-                  <li class="nav-item my_nav_item">
-                    <img class="rounded-circle" src="img/anhdaidien.png.jpg" alt="" width="auto" height="22">
-                  </li>
+                  <li class="nav-item my_nav_item show_btn_thatim">
+                    <a id="btn_hienthi_thongbao" class="nav-link " href="#" style="text-align: center;">
+                        <img src="img/like.PNG" alt="" width="auto" height="22">
+                    </a>                            
+                    <!-- Phần hiển thị giỏ hàng -->
+                    <div id="show_thongbao" class="show_thatim">   
+            
+                    </div>
+                    </li>
+                  <li class="nav-item my_nav_item" class ="show_profile">
+                    
+                    <a id="btn_hienthi_avt" class="nav-link " href="#" style="text-align: center;">
+                        <img class="rounded-circle" src="img/anhdaidien.png.jpg" alt="" width="auto" height="22">
+                    </a>  
+                  </li>                
                 </ul>
               </div>
             </div>
@@ -116,14 +134,14 @@
                         <img src="img/anh1.png" class="post-image" alt="">
                         <div class="post-content">
                             <div class="reaction-wrapper">
-                                <img class="btn_antim" src="./img/photo-1592899677977-9c10ca588bbd.jpg" class="icon" alt="" style="margin-right: 3px;">
+                                <img class="btn_antim" src="img/img_icon_timTrang.PNG" class="icon" alt="" style="margin-right: 3px;">
                                 <img class="btn_hientim" src="img/img_icon_timDo.PNG" class="icon" alt="" style="display: none; margin-right: 3px;">
                                 <img src="img/comment.PNG" class="icon" alt="">
                                 <img src="img/send.PNG" class="icon" alt="">
                                 <img src="img/save.PNG" class="save icon" alt="">
                             </div>
                             <p class="likes">9,5721 likes</p>
-                            <p class="description"><span>Porsche</span>Chia sẻ cho thầy đi  </p>
+                            <p class="description"><span>Porsche</span>Chia sẻ cho thầy đi <3 <3 <3 </p>
                             <p class="post-time">1 days ago</p>
                         </div>
                         <div class="comment-wrapper">
@@ -246,7 +264,7 @@
             </div>
         </div>
         <div class="col-md-4 " style="margin-top: 19px;"  >
-            <div style="width: 293px; height: 300px; background: aquamarine;">
+            <div style="width: 293px; height: 300px; background: snow;">
                 Profile
             </div>
         </div>
@@ -706,6 +724,23 @@
                 $(".btn_antim").show();
             })
         </script>
+        <script>
+                $(document).ready(function(){
+                $("#btn_hienthi_thongbao").click(function(){
+                    $("#show_thongbao").toggle();
+                });
+                });btn_hienthi_messenger
+        </script>
+
+        <script>
+            $(document).ready(function(){
+            $("#btn_hienthi_messenger").click(function(){
+                $("#show_message").toggle();
+            });
+            });
+        </script>
+ 
+    
 </body>
 
 </html>
