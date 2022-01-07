@@ -18,7 +18,7 @@
              <label for="inputUser" class="sr-only">User Name</label>
                 <input type="text" id="txtUser" name="txtUser" class="form-control" placeholder="Username" required autofocus>
              <label for="inputEmail" class="sr-only">Email address</label>
-                <input type="text" id="txtEmail" name="txtEmail" class="form-control" placeholder="Email address" required autofocus>
+                <input type="email" id="txtEmail" name="txtEmail" class="form-control" placeholder="Email address" required autofocus>
              <label for="inputPassword" class="sr-only" >Password</label>
                 <input type="password" id="inputPassword" name="txtPass" class="form-control" placeholder="Password" required>
              <label for="inputRetypePassword" class="sr-only" >Password</label>

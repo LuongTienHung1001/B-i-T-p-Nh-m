@@ -19,7 +19,7 @@
                     <img class="picture-1" src="./img/photo-1592899677977-9c10ca588bbd.jpg" alt="">
                 </div>
              <div class="form"  >
-                <form class="form-signin p-4 " style=" width:349px; heigh:452px;" action="process-index.php" method="post">
+                <form class="form-signin p-4 " style=" width:349px; heigh:452px;" action="process-login.php" method="post">
                     <h1 class="h3 mb-3 font-weight-normal p-5">𝓘𝓷𝓽𝓪𝓻𝓰𝓻𝓪𝓶</h1>
                     <label for="inputEmail" class="sr-only">Email address</label>
                     <input type="email" id="inputEmail" name="txtEmail" class="form-control" placeholder="Email address"
