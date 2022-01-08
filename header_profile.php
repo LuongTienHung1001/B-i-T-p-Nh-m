@@ -62,7 +62,6 @@
                                     </path>
                                 </svg></a>
                                 <div id="show_thongbao" class="show_thatim">   
-            
                                 </div>
                             <div class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
