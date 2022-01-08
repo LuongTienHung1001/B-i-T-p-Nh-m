@@ -59,9 +59,12 @@
                          <span class="profile-posts"> 
                                 <span class="fw-bold"> 0 </span> posts
                         </span>
-                        <span class="profile-followers text-center"> 
+                        <a id="btn_hienthi_thongbao" class="profile-followers text-center"> 
                                 <span class="fw-bold"> 100 </span> followers
-                        </span>
+                        </a>
+                        <div id="show_thongbao" class="show_thatim">   
+            
+                        </div>
                         <span class="profile-following text-center">
                                 <span class="fw-bold"> 1000 </span> following
                         </span>
@@ -169,6 +172,22 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="/Javascrip/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+        <script>
+                $(document).ready(function(){
+                $("#btn_hienthi_thongbao").click(function(){
+                    $("#show_thongbao").toggle();
+                });
+                });btn_hienthi_messenger
+        </script>
+        <script>
+            $(document).ready(function(){
+            $("#btn_hienthi_messenger").click(function(){
+                $("#show_message").toggle();
+            });
+            });
+        </script>
 </body>
 
 </html>
