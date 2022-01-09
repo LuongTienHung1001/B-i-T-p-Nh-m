@@ -71,7 +71,7 @@
                   </li>
 
                   <li class="nav-item my_nav_item">
-                    <a id="btn_hienthi_laban" class="nav-link " href="#" style="text-align: center;">
+                    <a id="btn_hienthi_laban" class="nav-link " href="list_picture.php" style="text-align: center;">
                         <img src="img/explore.PNG" alt="" width="auto" height="22">
                     </a> 
                   </li>
@@ -186,7 +186,7 @@
                                 <img src="img/save.PNG" class="save icon" alt="">
                             </div>
                             <p class="likes">9,5721 likes</p>
-                            <p class="description"><span>Porsche</span>Chia sẻ cho thầy đi <3 <3 <3 </p>
+                            <p class="description"><span>Porsche</span> Where or to it </p>
                             <p class="post-time">1 days ago</p>
                         </div>
                         <div class="comment-wrapper">
@@ -213,7 +213,7 @@
                                 <img src="img/save.PNG" class="save icon" alt="">
                             </div>
                             <p class="likes">1,5721</p>
-                            <p class="description"><span>McLaren </span> Tiền nhiều để làm gì ??? </p>
+                            <p class="description"><span>McLaren </span> You can't make people like you </p>
                             <p class="post-time">2 minutes ago</p>
                         </div>
                         <div class="comment-wrapper">
@@ -241,7 +241,7 @@
                                 <img src="img/save.PNG" class="save icon" alt="">
                             </div>
                             <p class="likes">3,5721</p>
-                            <p class="description"><span>Ferrari </span> 26 Sơn La chào anh em nhá :)) </p>
+                            <p class="description"><span>Ferrari </span> But you have to like yourself first </p>
                             <p class="post-time">3 days ago</p>
                         </div>
                         <div class="comment-wrapper">
@@ -268,7 +268,7 @@
                                 <img src="img/save.PNG" class="save icon" alt="">
                             </div>
                             <p class="likes">5,5721</p>
-                            <p class="description"><span>Lamborghini </span> Giàu vì bạn sang vì vợ :v :v :v </p>
+                            <p class="description"><span>Lamborghini </span> Silence is the best answer </p>
                             <p class="post-time">3 hours ago</p>
                         </div>
                         <div class="comment-wrapper">
@@ -295,7 +295,7 @@
                                 <img src="img/save.PNG" class="save icon" alt="">
                             </div>
                             <p class="likes">7,5721</p>
-                            <p class="description"><span>Bugatti </span> 29X5 chào anh em nhá :v :v :v </p>
+                            <p class="description"><span>Bugatti </span> Where or to it </p>
                             <p class="post-time">5 hours ago</p>
                         </div>
                         <div class="comment-wrapper">

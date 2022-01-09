@@ -22,8 +22,7 @@
             <div class="row mt-3">
                 <div class="px-0 col-4 col-md-5">
                     <div class="profile_img">
-                        <img id="photo-ad" src="https://images.unsplash.com/photo-1639903520702-5fddbeec9d39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60
-                        " alt="" style="border-radius:50% ;">
+                        <img id="photo-ad" src="img\photo-1639697724570-e688c7cb5c4e.jpg" alt="" style="border-radius:50% ;">
                     </div>
                 </div>
                 <?php
@@ -57,14 +56,12 @@
                            <!-- </form> -->
                     <div class="profile-body my-md-3 my-lg-3 text-center">
                          <span class="profile-posts"> 
-                                <span class="fw-bold"> 0 </span> posts
+                                <span class="fw-bold"> 9 </span> posts
                         </span>
-                        <a id="btn_hienthi_thongbao" class="profile-followers text-center"> 
+                        <span  class="profile-followers text-center"> 
                                 <span class="fw-bold"> 100 </span> followers
-                        </a>
-                        <div id="show_thongbao" class="show_thatim">   
-            
-                        </div>
+                        </span>
+                        
                         <span class="profile-following text-center">
                                 <span class="fw-bold"> 1000 </span> following
                         </span>
