@@ -65,7 +65,7 @@
                   </li>
 
                   <li class="nav-item my_nav_item">                    
-                    <a id="btn_hienthi_bangtin" class="nav-link " href="#" style="text-align: center;">
+                    <a id="btn_hienthi_bangtin" class="nav-link " href="form_post.php" style="text-align: center;">
                         <img src="img/add.PNG" alt="" width="auto" height="22">
                     </a>
                   </li>
