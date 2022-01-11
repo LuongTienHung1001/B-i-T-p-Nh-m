@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/form_admin.css">
+    <link rel="stylesheet" href="alpha.css">
     <title>Document</title>
 </head>
 <body>
@@ -48,10 +48,11 @@
         </div>
 </form>  -->
       
-<div class="container">
-<form action="upload.php" method="post" enctype="multipart/form-data" class="mb-5">
+<div class="container" style="width: 50%;">
+<div class="container" style="border: 1px solid #ccc;">
+<form action="upload.php" method="post" enctype="multipart/form-data" class="mb-5" >
           
-          <div class="alert alert-success text-center text-danger fw-bold text-uppercase" role="alert">
+          <div class="alert  text-center text-danger fw-bold text-uppercase" role="alert">
             <?php
                 // Kiểm tra xem có tồn tại cái error hay không 
                 if (isset($_GET['showTB'])) 
@@ -61,48 +62,41 @@
                 }
             ?>
           </div>
-        <div class="container_flex" style="display: flex;">         
+        <!-- <div class="container_flex" style="display: flex;">         
           <input class="form-control" type="file" name="files[]" multiple style="width: 546px; margin-left: 40px;">
-          <input type="submit" class="btn btn-primary"  name="submit" value="Xác nhận" style="margin-left: 30px; width: 546px">
-        </div>
+          
+        </div> -->
 
-        <div class="col">
-      <div class="form-outline">
-        <label class="form-label" for="form6Example1">Nội dung</label>
-        <input type="text" id="form6Example1" name="txtText" class="form-control" />
+        <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Chọn ảnh</label>
+        <input style=" width: 750px" class="form-control" type="file" name="files[]" multiple style="width: 546px; margin-left: 40px;">
+
+        <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> -->
       </div>
-    </div>
+
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Nội dung</label>
+        <!-- <input type="password" class="form-control" id="exampleInputPassword1"> -->
+        <input type="text" id="form6Example1" name="txtText" class="form-control" />
+
+      </div>
+      
+      <div>
+      <a  href="./homepage.php" class="btn btn-primary" style="text-decoration: none;" href="">Trang chủ</a>
+
+      <input type="submit" class="btn btn-primary"  name="submit" value="Đăng bài" >
+      <!-- <a type="button"   name="submit" value="Trang chủ" > -->
+      </div>
+ 
 </form>
 
 
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="width: 800px;">
 
-      <img src="uploads/dolan.PNG" class="d-block w-100" alt="...">
-    </div>
-        <?php        
-        include 'db.php';
+</div>
 
-        // Get images from the database
-        $query = $db->query("SELECT * FROM dangbai ORDER BY upload_on DESC");
 
-        if($query->num_rows > 0){
-            while($row = $query->fetch_assoc()){
-        
-              // img ở dưới hiển thị ảnh
 
-                $imageURL = 'uploads/'.$row["file_name"];
-        ?>
-              <p style="color: red;"> Nội dung Status : <?php echo $row["Content"]; // Hiển thị nội dung đăng tour ?> </p>
 
-            <div class="carousel-item">
-
-                      <img src="<?php echo $imageURL; ?>" alt="" class="d-block w-100" > 
-            </div>
-
-        <?php }
-        }else{ ?>
-            <p>No image(s) found...</p>
-        <?php } ?>
 
   </div>
 

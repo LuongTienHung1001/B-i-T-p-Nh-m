@@ -165,7 +165,18 @@
 <div class="container" >
     <div class="row" style="margin-top: 70px;" >
         <div class="col-md-8">
-           
+        <?php        
+        include 'db.php';
+
+        // Get images from the database
+        $query = $db->query("SELECT * FROM dangbai ORDER BY id DESC");
+
+        if($query->num_rows > 0){
+            while($row = $query->fetch_assoc()){
+        
+              // img ở dưới hiển thị ảnh
+                $imageURL = 'uploads/'.$row["file_name"];
+        ?>                                                                         
             <div class="wrapper">
                 <div class="left-col">
                     <div class="post">
@@ -176,7 +187,8 @@
                             </div>
                             <img src="img/option.PNG" class="options" alt="">
                         </div>
-                        <img src="img/anh1.png" class="post-image" alt="">
+                        <img src="<?php echo $imageURL; ?>" alt="" class="d-block w-100" >
+                        
                         <div class="post-content">
                             <div class="reaction-wrapper">
                                 <img class="btn_antim" src="img/img_icon_timTrang.PNG" class="icon" alt="" style="margin-right: 3px;">
@@ -186,7 +198,8 @@
                                 <img src="img/save.PNG" class="save icon" alt="">
                             </div>
                             <p class="likes">9,5721 likes</p>
-                            <p class="description"><span>Porsche</span> Where or to it </p>
+                            <!-- <p class="description"><span>Porsche</span> Where or to it </p> -->
+                            <p style=""> Nội dung Status : <?php echo $row["Content"]; // Hiển thị nội dung đăng bài ?> </p>   
                             <p class="post-time">1 days ago</p>
                         </div>
                         <div class="comment-wrapper">
@@ -307,6 +320,12 @@
                 
                 </div>
             </div>
+
+            <?php }
+        }else{ ?>
+            <p>No image(s) found...</p>
+        <?php } ?>
+
         </div>
         <div class="col-md-4 " style="margin-top: 19px;"  >
             <div style="width: 293px; height: 300px; background: snow;">
